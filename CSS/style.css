@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(190, 242, 255);
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.top-container{
+    margin: 0%;
+    padding-top: 100px;
+}
+
+.profile-img{
+    width: 200px;
+    border-radius: 30%;
+}
+
+.skill-img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+.btn{
+    margin: 20px;
+}
+
+.footer-link{
+    margin: 20px;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(37, 35, 35);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+.bottom-container{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* .background-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+} */
