@@ -9,10 +9,10 @@ function toggleTheme() {
     // 3. Save the user's preference to localStorage
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark');
-        themeToggleBtn.textContent = 'Toggle Light Mode'; // Update button text
+        themeToggleBtn.textContent = 'Light Mode'; // Update button text
     } else {
         localStorage.setItem('theme', 'light');
-        themeToggleBtn.textContent = 'Toggle Dark Mode'; // Update button text
+        themeToggleBtn.textContent = 'Dark Mode'; // Update button text
     }
 }
 
