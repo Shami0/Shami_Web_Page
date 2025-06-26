@@ -7,44 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="icon" href="../../My image.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-        }
-
-        .notes-container {
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .notes-container ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .notes-container li {
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../../CSS/style_notes.css">
 </head>
 
 <body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
     <h1>Full Stack Web Devlopement Bootcamp</h1>
     <p>This is page contains my notes related Full Stack Web Devlopment</p>
     <a href="../../index.html">Home</a>
@@ -52,17 +19,25 @@
     <div class="notes-container">
         <h2>Notes</h2>
         <ol>
-            <li></li>
+            <li>Front-End Web Development</li>
+            <li>Intro to HTML</li>
+            <li>Intermediate HTML</li>
+            <li>Multi-Page Websites</li>
+            <li>Introduction to CSS</li>
+            <li>CSS properties</li>
+            <li>Intermediate CSS</li>
+            <li>Advanced CSS</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Bootstrap</li>
+            <li>Web Design school - Create a website that people love</li>
+            <li>Capstone Project 2 - Personal Site</li>
+            <li><a href = "Full_Stack_Web_Dev_Au/14_introduction_to_javascript.html">Introduction to JavaScript</a></li>
+            <li>Intermediate JavaScript</li>
+            <li>Intro to Bootstrap</li>
         </ol>
     </div>
-    <div id="footer"></div>
-    <script>
-        fetch('footer.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-    </script>
+    <script src="../../JavaScript/script.js"></script>
 </body>
 
 </html>

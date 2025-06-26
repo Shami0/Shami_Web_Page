@@ -3,6 +3,26 @@ body{
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
+    transition: all 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* button {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  } */
+
+button.toggle-theme {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .top-container{
@@ -61,3 +81,51 @@ a:hover {
     z-index: -1;
     width: 100%;
 } */
+
+/*
+  1. Define color variables for light and dark themes.
+  The :root selector targets the <html> element.
+*/
+:root {
+    --bg-color: #fafafa;
+    --text-color: #222;
+    --link-color: #0d6cca;
+    --heading-color: #000;
+}
+
+/* The .dark-mode class will be added to the <body> with JavaScript */
+.dark-mode {
+    --bg-color: #222;
+    --text-color: #fafafa;
+    --link-color: #80c6ff;
+    --heading-color: #eee;
+}
+
+/*
+  2. Use the variables throughout your stylesheet.
+*/
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: system-ui, sans-serif;
+    padding: 2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+/* Optional: Style the button */
+#theme-toggle {
+    padding: 0.5em 1em;
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+}

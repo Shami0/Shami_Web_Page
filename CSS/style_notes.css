@@ -1,0 +1,83 @@
+:root {
+    --bg-color: #fafafa;
+    --text-color: #222;
+    --link-color: #0d6cca;
+    --heading-color: #000;
+    --notes-colour: #555;
+    --title-colour: #333;
+    --code-colour: #3d3b3b;
+    --shadow-c: rgba(0, 0, 0, 0.1);
+    --note-bg: #fff; 
+}
+
+.dark-mode {
+    --bg-color: #222;
+    --text-color: #fafafa;
+    --link-color: #3a90e6;
+    --heading-color: #eee;
+    --notes-clour: #e0e0e0;
+    --title-colour: #ffffff;
+    --code-colour: #d8d8d8;
+    --shadow-c: #666666;
+    --note-bg: #5c5c5c;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+h2,
+h3 {
+    color: var(--title-colour);
+}
+
+a {
+    color: var(--link-color);
+}
+
+p {
+    color: var(--notes-clour);
+}
+
+pre {
+    color: var(--code-colour);
+}
+
+.notes-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--note-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-c);
+    text-align: left;
+}
+
+.notes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notes-container li {
+    margin: 10px 0;
+}
+
+#topic {
+    color: black;
+}
+
+#theme-toggle {
+    padding: 0.5em 1em;
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
