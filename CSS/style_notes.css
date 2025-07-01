@@ -1,7 +1,7 @@
 :root {
     --bg-color: #fafafa;
     --text-color: #222;
-    --link-color: #0d6cca;
+    --link-color: #169976;
     --heading-color: #000;
     --notes-colour: #555;
     --title-colour: #333;
@@ -11,15 +11,15 @@
 }
 
 .dark-mode {
-    --bg-color: #222;
+    --bg-color: #000000;
     --text-color: #fafafa;
-    --link-color: #3a90e6;
+    --link-color: #1DCD9F;
     --heading-color: #eee;
     --notes-clour: #e0e0e0;
     --title-colour: #ffffff;
     --code-colour: #d8d8d8;
-    --shadow-c: #666666;
-    --note-bg: #5c5c5c;
+    --shadow-c: #1d1d1d;
+    --note-bg: #222222;
 }
 
 body {
@@ -48,7 +48,15 @@ p {
 }
 
 pre {
+    padding: 20px;
     color: var(--code-colour);
+    background: var(--note-bg);
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 .notes-container {

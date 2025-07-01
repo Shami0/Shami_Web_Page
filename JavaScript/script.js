@@ -1,8 +1,6 @@
-// 1. Select the button and the body
+// Dark Mode 
 const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
-
-// 2. Function to toggle dark mode
 function toggleTheme() {
     body.classList.toggle('dark-mode');
 
@@ -15,11 +13,7 @@ function toggleTheme() {
         themeToggleBtn.textContent = 'Dark Mode'; // Update button text
     }
 }
-
-// 4. Add a click event listener to the button
 themeToggleBtn.addEventListener('click', toggleTheme);
-
-// 5. Check for saved preference on page load
 window.addEventListener('load', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {

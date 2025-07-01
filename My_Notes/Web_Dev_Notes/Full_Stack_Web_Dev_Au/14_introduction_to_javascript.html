@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../../CSS/style.css">
     <link rel="icon" href="../../../My image.png">
     <link rel="stylesheet" href="../../../CSS/style_notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-dark.min.css">
 </head>
 <body>
     <button id="theme-toggle">Toggle Dark Mode</button>
@@ -36,55 +37,97 @@
             <li>Functions</li>
             <p><a href="https://stanford.edu/~cpiech/karel/ide.html">For practice code </a></p>
             <p id="topic">Parameters and Arguments</p>
-<pre id="Code_100">
-    function getMilk(money) {
-        var bottles = Math.floor(money / 1.5);
-        console.log("leaveHouse");
-        console.log("moveRight");
-        console.log("moveRight");
-        console.log("moveUp");
-        console.log("moveUp");
-        console.log("moveUp");
-        console.log("moveUp");
-        console.log("moveRight");
-        console.log("moveRight");
-        console.log("Buy " + bottles + " Bottles of milk for " + money +"$");
-        console.log("moveLeft");
-        console.log("moveLeft");
-        console.log("moveDown");
-        console.log("moveDown");
-        console.log("moveDown");
-        console.log("moveDown");
-        console.log("moveLeft");
-        console.log("moveLeft");
-        console.log("enterHouse");
-    }
+
+<pre><code class="language-javascript">
+function getMilk(money) {
+    var bottles = Math.floor(money / 1.5);
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("Buy " + bottles + " Bottles of milk for " + money +"$");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+}
                 
-                
-    getMilk(10);
-</pre>      
+getMilk(10);
+</code></pre>      
+
             <ul>
                 <li>Exercise 2: Life in Weeks Coding Exercise</li>
             </ul>
-<pre>
-    function lifeInWeeks(age) {
+
+<pre><code class="language-javascript">
+function lifeInWeeks(age) {
     
-        /************Don't change the code above************/ 
+    /************Don't change the code above************/ 
             
-            //Write your code here.
-            var yearsLeft = 90 - age;
+        //Write your code here.
+        var yearsLeft = 90 - age;
             
-            var daysLeft = yearsLeft * 365;
-            var weeksLeft = yearsLeft * 52;
-            var monthsLeft = yearsLeft * 12;
+        var daysLeft = yearsLeft * 365;
+        var weeksLeft = yearsLeft * 52;
+        var monthsLeft = yearsLeft * 12;
             
-            console.log("You have "+daysLeft+" days, "+weeksLeft+" weeks, and "+monthsLeft+" months left.");
+        console.log("You have "+daysLeft+" days, "+weeksLeft+" weeks, and "+monthsLeft+" months left.");
             
-        /*************Don't change the code below**********/
-        }
-</pre>
+    /*************Don't change the code below**********/
+}
+</code></pre>
+
             <p id="topic">Output & Return Values</p>
-            
+
+<pre><code class="language-javascript">
+function getMilk(money, costPerBottle) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+
+    console.log("Buy " + calcBottles(money, costPerBottle) + " Bottles of milk");
+
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+    return calcChange(money, costPerBottle);
+}
+
+function calcBottles(startingMoney, costPerBottle) {
+    var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+    return numberOfBottles;
+}
+
+function calcChange(startingAmount, costPerBottle) {
+    var change = startingAmount % costPerBottle;
+    return change;
+}
+
+console.log("Hello there, here is your " + getMilk(10, 1.5)+ " change.");
+</code></pre>
+
             <li>86. Challenge: Canging string casing solution</li>
             <p><strong>Code</strong></p>
             <p></p>
@@ -92,5 +135,7 @@
         </ol>
     </div>
     <script src="../../../JavaScript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
