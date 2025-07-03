@@ -11,14 +11,15 @@
 </head>
 <body>
     <button id="theme-toggle">Toggle Dark Mode</button>
-    <h1>Introduction to JavaScript</h1>
-    <p>This is page contains my notes related to Introduction to JavaScript</p>
+    <h1>JavaScript</h1>
+    <p>This is page contains my notes related to JavaScript.</p>
     <a href="../../../index.html">Home</a>
 
     <div class="notes-container">
-        <h2>Notes</h2>
+        <h2>Basic JavaScript</h2>
         <ol>
             <li><b>What is JavaScript?</b></li>
+            <p></p>
             <li><b>How to use JavaScript?</b></li>
             <li><b>Variables</b></li>
             <li><b>Data Types</b></li>
@@ -128,12 +129,56 @@ function calcChange(startingAmount, costPerBottle) {
 console.log("Hello there, here is your " + getMilk(10, 1.5)+ " change.");
 </code></pre>
 
-            <li>86. Challenge: Canging string casing solution</li>
-            <p><strong>Code</strong></p>
-            <p></p>
+            <li>Coding exercise: BMI Calculator solution</li>
+<pre><code class="language-javascript">
+//Create your function below this line.
+//The first parameter should be the weight and the second should be the height.
+
+function bmiCalculator(weight, height) {
+    var bmi = weight/Math.pow(height, 2); //Math.pow(base, exponent)
+    return Math.round(bmi); //Math.round() to round off the value accurately
+}
+
+/* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+var bmi = bmiCalculator(65, 1.8);
+bmi should equal 20 when it's rounded to the nearest whole number.
+*/
+
+var bmi = bmiCalculator(65, 1.8);
+console.log(bmi);
+</code></pre>
             
         </ol>
+        <h2>Intermediate JavaScript</h2>
+        <ol>
+            <li>Random Number Generation in Javascript: Building a Love Calculator</li>
+        
+            <li>Control Statement: Using If-Else Conditionals & Logic</li>
+        
+            <li>Comparators and Equality</li>
+        
+            <li>Combining Comparators</li>
+        
+            <li>Coding Exercise 4: BMI Calculator Advanced (IF/ELSE)</li>
+        
+            <li>Coding Exercise 5: Leap Year Challenge</li>
+        
+            <li>Collections: Working with Javascript Arrays</li>
+        
+            <li>Adding Elements and Intermediate Array Techniques</li>
+        
+            <li>Coding Exercise 6: Who is Buying Lunch? Code Challenge</li>
+        
+            <li>Control Statement: While Loops</li>
+        
+            <li>99 Bottles Challenge</li>
+        
+            <li>Control Statement: For Loops</li>
+        
+            <li>Coding Exercise 7: The Fibonacci Exercise</li>
+        </ol>
     </div>
+
     <script src="../../../JavaScript/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>

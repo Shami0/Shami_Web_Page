@@ -26,7 +26,8 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
-    padding: 2em;
+    padding-right: 0;
+    padding-left: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -48,7 +49,7 @@ p {
 }
 
 pre {
-    padding: 20px;
+    padding: 10px;
     color: var(--code-colour);
     background: var(--note-bg);
 }
@@ -60,7 +61,6 @@ code {
 }
 
 .notes-container {
-    margin: 20px auto;
     padding: 20px;
     background-color: var(--note-bg);
     border-radius: 8px;
