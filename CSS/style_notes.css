@@ -80,12 +80,3 @@ code {
 #topic {
     color: var(--title-colour);
 }
-
-#theme-toggle {
-    padding: 0.5em 1em;
-    border: 1px solid var(--text-color);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    cursor: pointer;
-    border-radius: 5px;
-}

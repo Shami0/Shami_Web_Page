@@ -25,3 +25,17 @@ window.addEventListener('load', () => {
         themeToggleBtn.textContent = 'Toggle Dark Mode';
     }
 });
+
+function toggleSidebar(button) {
+    var sidebar = document.getElementById("mySidebar");
+    var main = document.getElementById("main");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+        main.style.marginLeft = "0";
+        button.innerHTML = "☰ Open Sidebar";
+    } else {
+        sidebar.style.width = "250px";
+        main.style.marginLeft = "250px";
+        button.innerHTML = "☰ Close Sidebar";
+    }
+}

@@ -3,6 +3,7 @@
     --text-color: #222;
     --link-color: #0d6cca;
     --heading-color: #000;
+    --hover-colour: #e0e0e0;
 }
 
 /* The .dark-mode class will be added to the <body> with JavaScript */
@@ -11,6 +12,7 @@
     --text-color: #fafafa;
     --link-color: #80c6ff;
     --heading-color: #eee;
+    --hover-colour: #444;
 }
 
 body{
@@ -36,13 +38,6 @@ body.dark-mode {
     cursor: pointer;
   } */
 
-button.toggle-theme {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.5rem 1rem;
-}
-
 .top-container{
     margin: 0%;
     padding-top: 100px;
@@ -56,10 +51,6 @@ button.toggle-theme {
 .skill-img{
     width: 400px;
     border-radius: 50%;
-}
-
-.btn{
-    margin: 20px;
 }
 
 .footer-link{
@@ -118,11 +109,63 @@ a {
 }
 
 /* Optional: Style the button */
-#theme-toggle {
+.theme-toggle {
+    cursor: pointer;
+    border: none;
+    align-items: last baseline;
     padding: 0.5em 1em;
-    border: 1px solid var(--text-color);
     background-color: var(--bg-color);
     color: var(--text-color);
     cursor: pointer;
     border-radius: 5px;
+}
+
+.theme-toggle:hover {
+    background-color: var(--hover-colour);
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.openbtn {
+    cursor: pointer;
+    border: none;
+    align-items: last baseline;
+    padding: 0.5em 1em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.openbtn:hover {
+    background-color: var(--hover-colour);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }

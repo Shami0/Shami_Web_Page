@@ -12,7 +12,17 @@
 </head>
 
 <body>
-    <button id="theme-toggle">Toggle Dark Mode</button>
+    <button class="openbtn" onclick="toggleSidebar(this)">☰ Open Sidebar</button>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar(document.querySelector('.openbtn'))">×</a>
+        <a href="../../index.html">Home</a>
+        <a href="../Notes_Home.html">Notes Home</a>
+        <a href="../Python_notes/python_pro_bootcamp_Au.html">Python Pro Bootcamp</a>
+        <a href="../Web_Dev_Notes/full_stack_web_dev_Au.html">Full Stack Web Devlopment</a>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle">Toggle Dark Mode</button>
     <h1>Introduction to JavaScript</h1>
     <p>This is page contains my notes related to Introduction to JavaScript</p>
     <a href="../../index.html">Home</a>
