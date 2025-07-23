@@ -7,7 +7,7 @@
     --title-colour: #333;
     --code-colour: #3d3b3b;
     --shadow-c: rgba(0, 0, 0, 0.1);
-    --note-bg: #fff; 
+    --note-bg: #fff; ;
 }
 
 .dark-mode {
@@ -79,4 +79,18 @@ code {
 
 #topic {
     color: var(--title-colour);
+}
+
+button.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--link-color);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-items: right;
 }
