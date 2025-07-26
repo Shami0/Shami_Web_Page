@@ -68,13 +68,12 @@ code {
     text-align: left;
 }
 
-.notes-container ul {
-    list-style-type: none;
-    padding: 0;
+.Title_3 {
+    padding-left: 10px;
+    font-weight: bold;
 }
-
-.notes-container li {
-    margin: 10px 0;
+.Under_Title_3 {
+    padding-left: 15px;
 }
 
 #topic {

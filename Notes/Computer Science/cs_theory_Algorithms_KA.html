@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="icon" href="../../My image.png">
+    <link rel="stylesheet" href="../../CSS/style_notes.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+    <h1>My Notes</h1>
+    <p>This is the home page for my notes.</p>
+    <br>
+    <br>
+    <a href="../index.html">Home</a>
+
+    <div class="notes-container">
+    <h2>Intro to Algorithms</h2>
+
+    <h2>Binary Search</h2>
+
+    <h2>Asymptotic notation</h2>
+        <h3>intro</h3>
+        <p>The running time of algorithms like linear search and binary search depends primarily on how the number of operations grows with the input size n, rather than on constant factors such as computer speed or language. This is captured using asymptotic notation, which focuses on the rate of growth of the running time and simplifies functions by dropping less significant terms and constants.</p>
+        
+        <p class="Title_3"><strong>Running Time as a Function of Input Size</strong></p>
+        
+        <ul>
+            <li>Linear Search
+                <ul>
+                    <li>Checks each element one by one until it finds the target or exhausts the list.</li>
+                    <li>The number of operations grows linearly with the input size n.</li>
+                    <li>Worst-case time complexity is O(n), meaning if you double n, the running time roughly doubles.</li>
+                    <li>Example: For n = 1000, the algorithm might do up to 1000 checks.</li>
+                </ul>
+            </li>
+            <li>Binary Search
+                <ul>
+                    <li>Requires a sorted array.</li>
+                    <li>Eliminates half of the search space with each comparison.</li>
+                    <li>The number of operations grows logarithmically with the input size.</li>
+                    <li>Worst-case time complexity is O(log n), meaning doubling n adds only a single additional comparison.</li>
+                    <li>Example: For n = 1000, it takes about 10 comparisons to find the target.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p class="Title_3"><strong>Rate of Growth and Simplification</strong></p>
+        <p class="Under_Title_3">Consider an algorithm that takes:</p>
+        <p class="Under_Title_3" id="formula">6n<sup>2</sup> + 100n + 300</p>
+        <p class="Under_Title_3">machine instructions for input size n.</p>
+        
+        <ul class="Under_Title_3">
+            <li>For large n, the 6n<sup>2</sup> term dominates 100n + 300.</li>
+            <li>We simplify by focusing on n<sup>2</sup> and ignoring constants (like 6) and lower-order terms (like 100n and 300).</li>
+            <li>This simplification leads to using Big O notation to express the growth rate, which in this example is O(n<sup>2</sup>)</li>
+        </ul>
+        
+        <pre>
+            - For large $$ n $$, the $$ 6n^2 $$ term dominates $$ 100n + 300 $$.
+            - 
+            - 
+            $$.
+            
+            Even if coefficients or constants differ (e.g., $$ 0.6n^2 $$ vs. $$ 1000n + 3000 $$), there's always some large enough
+            $$ n $$ beyond which the $$ n^2 $$ term dominates.
+            
+            ### Asymptotic Notations to Describe Running Time
+            
+            - **Big-$$ O $$ (Upper Bound):** Describes the worst-case growth rate. Used to say the running time grows *no faster
+            than* a certain rate.
+            - **Big-$$ \Theta $$ (Tight Bound):** Describes the exact asymptotic growth (both upper and lower bounds match).
+            - **Big-$$ \Omega $$ (Lower Bound):** Describes the best-case growth rate, meaning the running time grows *at least* as
+            fast as the bound.
+            
+            ### Summary in the Context of Linear and Binary Search
+            
+            | Aspect | Linear Search | Binary Search |
+            |----------------------------|-----------------------------|--------------------------|
+            | Running Time (Worst Case) | $$ O(n) $$ | $$ O(\log n) $$ |
+            | Rate of Growth | Linear (proportional to $$ n $$) | Logarithmic (proportional to $$ \log n $$) |
+            | Dependence on Input Size | Checks elements sequentially | Halves search space each step |
+            | Effect of Doubling $$ n $$ | Running time doubles | Running time increases by 1 |
+            
+            This is why, even though actual time depends on many hardware and implementation details, **algorithm running times are
+            best understood as functions of input size using asymptotic notation, focusing on the dominant term for large $$ n $$**.
+            
+            This understanding helps you predict how an algorithm scales and compare algorithms independently of machine-specific
+            details.
+            
+            If you'd like, I can also explain the Big-O notation more formally with examples related to these searches.
+            
+            [1] https://codedamn.com/news/algorithms/optimizing-search-algorithms-binary-vs-linear
+            [2] https://www.youtube.com/watch?v=AUtyHzRm1-M
+            [3] https://www.geeksforgeeks.org/dsa/linear-search-vs-binary-search/
+            [4] https://www.shiksha.com/online-courses/articles/difference-between-linear-search-and-binary-search/
+            [5] https://www.geeksforgeeks.org/dsa/which-is-faster-between-binary-search-and-linear-search/
+            [6] https://www.upgrad.com/blog/binary-search-algorithm/
+            [7] https://www.w3schools.com/dsa/dsa_timecomplexity_binarysearch.php
+            [8] https://www.ijtrd.com/papers/IJTRD22236.pdf
+            [9] https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/
+            [10] https://www.scaler.in/difference-between-linear-search-and-binary-search/
+        </pre>
+
+    <h2>Selection sort</h2>
+
+    <h2>Insertion sort</h2>
+
+    <h2>Recursive algorithms</h2>
+
+    <h2>Towers of Hanoi</h2>
+
+    <h2>Merge sort</h2>
+
+    <h2>Quick sort</h2>
+
+    <h2>Graph representation</h2>
+
+    <h2>Breadth-first search</h2>
+
+    </div>
+
+
+
+    <script src="../../JavaScript/script.js"></script>
+    <script src="../../JavaScript/layout_loder.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
